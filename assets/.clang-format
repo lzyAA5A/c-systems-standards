@@ -1,0 +1,29 @@
+# 本项目 C 代码风格（clang-format 可读；本机未安装 clang-format，纯作规范声明用）
+# 与 style.md 一致：4 空格缩进、100 列、指针贴类型名、强制花括号。
+---
+Language: Cpp
+BasedOnStyle: LLVM
+Standard: c++17
+IndentWidth: 4
+TabWidth: 4
+UseTab: Never
+ColumnLimit: 100
+BreakBeforeBraces: Allman
+AllowShortFunctionsOnASingleLine: None
+AllowShortIfStatementsOnASingleLine: Never
+AllowShortLoopsOnASingleLine: false
+PointerAlignment: Right
+DerivePointerAlignment: false
+AlignConsecutiveMacros: true
+AlignConsecutiveAssignments: true
+AlignConsecutiveDeclarations: true
+SpaceAfterCStyleCast: true
+IncludeBlocks: Preserve
+IncludeCategories:
+  - Regex: '^".*"$'
+    Priority: 1
+  - Regex: '^<[a-z_]+\.h>$'
+    Priority: 2
+  - Regex: '^<'
+    Priority: 3
+...

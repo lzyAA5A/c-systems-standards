@@ -1,0 +1,15 @@
+# 统一换行策略：仓库内一律 LF，检出到各平台时由 git 转换
+* text=auto eol=lf
+
+# Shell 脚本必须保持 LF，否则在 Linux 上无法执行
+*.sh      text eol=lf
+
+# PowerShell 脚本在 Windows 上用 CRLF 更稳妥，Linux 侧也能读
+*.ps1     text eol=crlf
+
+# 二进制
+*.png     binary
+*.jpg     binary
+*.gif     binary
+*.pdf     binary
+*.zip     binary
